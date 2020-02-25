@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 ENV REFRESHED_AT 2018-11-08
 
-LABEL maintainer="Matthieu Boileau <matthieu.boileau@math.unistra.fr>"
+LABEL maintainer="Matthieu Boileau <navaro@math.cnrs.fr>"
 
 RUN apt-get update --fix-missing && \
     apt-get install -y \ 
