@@ -4,7 +4,7 @@ ENV REFRESHED_AT 2020-02-27
 LABEL maintainer="Pierre Navaro <navaro@math.cnrs.fr>"
 
 RUN apt-get update --fix-missing && \
-    apt-get install -y \ 
+    apt-get install -yq \ 
     make \
     pandoc \
     texlive-xetex \
