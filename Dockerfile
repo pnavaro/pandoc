@@ -1,7 +1,8 @@
 FROM ubuntu:18.04
-ENV REFRESHED_AT 2020-02-27
 
 LABEL maintainer="Pierre Navaro <navaro@math.cnrs.fr>"
+
+ENV REFRESHED_AT 2016-07-01
 
 RUN apt-get update --fix-missing && \
     apt-get install -yq \ 
