@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 ENV REFRESHED_AT 2018-11-08
 
 LABEL maintainer="Pierre Navaro <navaro@math.cnrs.fr>"
@@ -10,7 +10,7 @@ RUN apt-get update --fix-missing && \
     texlive-xetex \
     texlive-lang-french \
     texlive-fonts-extra \
-    texlive-math-extra && \
+    mkdocs mkdocs-bootstrap && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
