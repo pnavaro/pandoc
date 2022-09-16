@@ -3,7 +3,6 @@ FROM ubuntu:20.04
 LABEL maintainer="Pierre Navaro <navaro@math.cnrs.fr>"
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV REFRESHED_AT 2016-07-01
 
 RUN apt-get update --fix-missing && \
     apt-get install -yq \ 
